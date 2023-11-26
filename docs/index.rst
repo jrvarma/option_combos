@@ -41,10 +41,14 @@ Default values
 Merton Model for Credit Risk
 ============================
 
+This function helps apply Merton model of credit risk.
+
 .. autofunction:: Black_Scholes.merton_model.merton
 
 EWMA Volatility Estimation
 ==========================
+
+This module helps in EWMA.
 
 .. automodule:: Black_Scholes.EWMA
    :members:
@@ -52,6 +56,8 @@ EWMA Volatility Estimation
 
 Check analytical Greeks numerically
 ===================================
+
+This module tests the greeks.
 
 .. automodule:: Black_Scholes.GBS_greek_test
    :members:
