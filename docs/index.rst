@@ -4,8 +4,8 @@
 .. mdinclude:: ../README.md
 
 
-Simple Black Scholes
-====================
+Basic Black Scholes
+===================
 
 .. automodule:: Black_Scholes.GBS
    :members:
