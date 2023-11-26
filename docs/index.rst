@@ -9,14 +9,12 @@ Basic Black Scholes
 
 .. automodule:: Black_Scholes.GBS
    :members:
-   :member-order: bysource
 
 Extended Black Scholes with bonds and forwards
 ==============================================
 
 .. automodule:: Black_Scholes.GBSx
    :members:
-   :member-order: bysource
 
 Option Portfolios
 =================
@@ -29,39 +27,29 @@ Option Combos
 
 .. automodule:: Black_Scholes.combos
    :members:
-   :member-order: bysource
 
 Default values
 ==============
 
 .. automodule:: Black_Scholes.defaults
    :members:
-   :member-order: bysource
 
 Merton Model for Credit Risk
 ============================
-
-This function helps apply Merton model of credit risk.
 
 .. autofunction:: Black_Scholes.merton_model.merton
 
 EWMA Volatility Estimation
 ==========================
 
-This module helps in EWMA.
-
 .. automodule:: Black_Scholes.EWMA
    :members:
-   :member-order: bysource
 
 Check analytical Greeks numerically
 ===================================
 
-This module tests the greeks.
-
 .. automodule:: Black_Scholes.GBS_greek_test
    :members:
-   :member-order: bysource
 
 
 Indices and tables
