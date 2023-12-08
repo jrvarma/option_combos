@@ -15,7 +15,7 @@
 
 import numpy  # noqa:F401
 from numpy import exp
-from Black_Scholes import GBS, instrument, mywhere, defaults
+from option_combos import GBS, instrument, mywhere, defaults
 
 
 class GBSx(GBS):

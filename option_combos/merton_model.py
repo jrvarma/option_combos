@@ -13,7 +13,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-from Black_Scholes import option_type, GBS
+from option_combos import option_type, GBS
 from scipy.optimize import brentq
 import numpy as np
 import pandas as pd

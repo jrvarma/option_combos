@@ -17,7 +17,7 @@ sys.path.insert(0, os.path.abspath('..'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'Black Scholes'
+project = 'option_combos'
 copyright = '2016, 2020, 2023 Prof. Jayanth R. Varma and Prof. Vineet Virmani'
 author = 'Prof. Jayanth R. Varma and Prof. Vineet Virmani'
 

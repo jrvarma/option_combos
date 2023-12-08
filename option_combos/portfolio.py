@@ -14,7 +14,7 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 from numpy import dot, array
-from Black_Scholes import GBSx, instrument
+from option_combos import GBSx, instrument
 
 
 class option_portfolio(GBSx):

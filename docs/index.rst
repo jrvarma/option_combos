@@ -7,48 +7,48 @@
 Basic Black Scholes
 ===================
 
-.. automodule:: Black_Scholes.GBS
+.. automodule:: option_combos.GBS
    :members:
 
 Extended Black Scholes with bonds and forwards
 ==============================================
 
-.. automodule:: Black_Scholes.GBSx
+.. automodule:: option_combos.GBSx
    :members:
 
 Option Portfolios
 =================
 
-.. automodule:: Black_Scholes.portfolio
+.. automodule:: option_combos.portfolio
    :members:
 
 Option Combos
 =============
 
-.. automodule:: Black_Scholes.combos
+.. automodule:: option_combos.combos
    :members:
 
 Default values
 ==============
 
-.. automodule:: Black_Scholes.defaults
+.. automodule:: option_combos.defaults
    :members:
 
 Merton Model for Credit Risk
 ============================
 
-.. autofunction:: Black_Scholes.merton_model.merton
+.. autofunction:: option_combos.merton_model.merton
 
 EWMA Volatility Estimation
 ==========================
 
-.. automodule:: Black_Scholes.EWMA
+.. automodule:: option_combos.EWMA
    :members:
 
 Check analytical Greeks numerically
 ===================================
 
-.. automodule:: Black_Scholes.GBS_greek_test
+.. automodule:: option_combos.GBS_greek_test
    :members:
 
 

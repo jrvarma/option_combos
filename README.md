@@ -1,6 +1,6 @@
-Full documentation is available at <https://black-scholes.readthedocs.io/>
+Full documentation is available at <https://option_combos.readthedocs.io/>
 
-This package computes Black Scholes options values and Greeks with a number of valuable features:
+This package computes Black Scholes options values and Greeks for options and option combos with a number of valuable features:
 
 * The functions cover a comprehensive set of Greeks:
   - The first order Greeks include (a) several variants of delta including delta driftless, delta forward and delta dual, (b) rho's with respect to domestic and foreign interest rates, (c) theta per day and vega per percentage point change in volatility.

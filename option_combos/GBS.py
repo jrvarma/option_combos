@@ -17,8 +17,8 @@ import numpy  # noqa:F401
 from numpy import log, exp, sqrt, isnan, maximum, where
 from scipy.stats import norm
 from scipy.optimize import brentq
-from Black_Scholes import defaults
-from Black_Scholes import instrument  # noqa:F401 (used in doctest)
+from option_combos import defaults
+from option_combos import instrument  # noqa:F401 (used in doctest)
 
 import warnings
 sigma_low = 1e-4  # 0.01%

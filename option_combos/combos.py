@@ -14,7 +14,7 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 from numpy import sqrt, linspace, sort, inf
-from Black_Scholes import option_portfolio, instrument, defaults
+from option_combos import option_portfolio, instrument, defaults
 import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.widgets import Slider

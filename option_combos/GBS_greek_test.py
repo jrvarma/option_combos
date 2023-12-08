@@ -13,7 +13,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-from Black_Scholes import GBSx, instrument
+from option_combos import GBSx, instrument
 from scipy.stats import norm, uniform
 from math import exp
 
