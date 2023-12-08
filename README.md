@@ -1,4 +1,4 @@
-Full documentation is available at <https://option_combos.readthedocs.io/>
+Full documentation is available at <https://option-combos.readthedocs.io/>
 
 This package computes Black Scholes options values and Greeks for options and option combos with a number of valuable features:
 
