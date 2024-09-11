@@ -173,9 +173,9 @@ class GBSx(GBS):
 
         Examples
         --------
-        >>> GBSx(S=101, ttm=1).Delta().round(8)
+        >>> GBSx(S=101, ttm=1).Delta().round(8).item()
         0.60558311
-        >>> GBSx(instrumentType=instrument.forward).Delta().round(6)
+        >>> GBSx(instrumentType=instrument.forward).Delta().round(6).item()
         0.998335
 
         Bond has zero delta
@@ -196,9 +196,9 @@ class GBSx(GBS):
 
         Examples
         --------
-        >>> GBSx(instrumentType=instrument.forward).DeltaFwd().round(6)
+        >>> GBSx(instrumentType=instrument.forward).DeltaFwd().round(6).item()
         0.995842
-        >>> GBSx(S=101, ttm=1).DeltaFwd().round(8)
+        >>> GBSx(S=101, ttm=1).DeltaFwd().round(8).item()
         0.58768543
         """
         return mywhere(self.isoption, GBS.DeltaFwd(self),
@@ -215,7 +215,7 @@ class GBSx(GBS):
 
         Examples
         --------
-        >>> GBSx(S=101, ttm=1).DeltaDriftless().round(8)
+        >>> GBSx(S=101, ttm=1).DeltaDriftless().round(8).item()
         0.6178167
 
         Driftless delta of forward is exactly 1
@@ -239,7 +239,7 @@ class GBSx(GBS):
 
         Examples
         --------
-        >>> GBSx(S=101, ttm=1).DeltaDual().round(8)
+        >>> GBSx(S=101, ttm=1).DeltaDual().round(8).item()
         -0.51340635
         """
         return mywhere(self.isoption, GBS.DeltaDual(self),
@@ -254,12 +254,12 @@ class GBSx(GBS):
 
         Examples
         --------
-        >>> GBSx(S=101, ttm=1).Theta().round(8)
+        >>> GBSx(S=101, ttm=1).Theta().round(8).item()
         -5.11977695
 
         Most Greeks of a bond are zero, but theta is non zero
 
-        >>> GBSx(instrumentType=instrument.bond).Theta().round(6)
+        >>> GBSx(instrumentType=instrument.bond).Theta().round(6).item()
         4.97921
 
         """
@@ -283,7 +283,7 @@ class GBSx(GBS):
 
         Examples
         --------
-        >>> GBSx(S=101, ttm=1).Theta_daily().round(8)
+        >>> GBSx(S=101, ttm=1).Theta_daily().round(8).item()
         -0.01402679
         """
         return self.Theta() / 365
@@ -298,7 +298,7 @@ class GBSx(GBS):
 
         Examples
         --------
-        >>> GBS().Vega().round(8)
+        >>> GBS().Vega().round(8).item()
         11.4673916
 
         Forward has zero vega
@@ -319,7 +319,7 @@ class GBSx(GBS):
 
         Examples
         --------
-        >>> GBS().Vega_percent().round(8)
+        >>> GBS().Vega_percent().round(8).item()
         0.11467392
 
         """
@@ -335,7 +335,7 @@ class GBSx(GBS):
 
         Examples
         --------
-        >>> GBSx().RhoD().round(8)
+        >>> GBSx().RhoD().round(8).item()
         4.19712579
         """
         # rhoDfwd = self.K * self.ttm * self.DFr * (
@@ -355,7 +355,7 @@ class GBSx(GBS):
 
         Examples
         --------
-        >>> GBSx().RhoF().round(8)
+        >>> GBSx().RhoF().round(8).item()
         -4.39904719
         """
         # rhoFfwd = -self.S * self.ttm * self.DFq * (
@@ -377,7 +377,7 @@ class GBSx(GBS):
 
         Examples
         --------
-        >>> GBSx(S=101, ttm=1).Gamma().round(8)
+        >>> GBSx(S=101, ttm=1).Gamma().round(8).item()
         0.0185081
 
         Forward has zero gamma
@@ -398,7 +398,7 @@ class GBSx(GBS):
 
         Examples
         --------
-        >>> GBSx(S=101, ttm=1).GammaDual().round(8)
+        >>> GBSx(S=101, ttm=1).GammaDual().round(8).item()
         0.01888012
         """
         return mywhere(self.isoption, GBS.GammaDual(self), 0)
@@ -413,7 +413,7 @@ class GBSx(GBS):
 
         Examples
         --------
-        >>> GBSx(S=101, ttm=1).Charm().round(8)
+        >>> GBSx(S=101, ttm=1).Charm().round(8).item()
         -0.02532113
        """
         return mywhere(self.isoption, GBS.Charm(self),
@@ -431,7 +431,7 @@ class GBSx(GBS):
 
         Examples
         --------
-        >>> GBSx(S=101, ttm=1).Vanna().round(8)
+        >>> GBSx(S=101, ttm=1).Vanna().round(8).item()
         -0.1864676
         """
         return mywhere(self.isoption, GBS.Vanna(self),
@@ -447,7 +447,7 @@ class GBSx(GBS):
 
         Examples
         --------
-        >>> GBSx(S=101, ttm=1).Volga().round(8)
+        >>> GBSx(S=101, ttm=1).Volga().round(8).item()
         5.6452911
        """
         return mywhere(self.isoption, GBS.Volga(self),
@@ -466,7 +466,7 @@ class GBSx(GBS):
 
         Examples
         --------
-        >>> GBSx().Color().round(8)
+        >>> GBSx().Color().round(8).item()
         -0.41635232
         >>> GBSx(instrumentType=instrument.forward).Color()
         0

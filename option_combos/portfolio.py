@@ -98,7 +98,7 @@ class option_portfolio(GBSx):
         --------
         >>> p = option_portfolio(S=100, K=array([99, 101]), sigma=0.2,
         ...     ttm=1, r=0.01, q=0, weight=[2, 1])
-        >>> p.value().round(6)
+        >>> p.value().round(6).item()
         25.804862
 
         Verify by taking each option separately
@@ -125,7 +125,7 @@ class option_portfolio(GBSx):
         --------
         >>> p = option_portfolio(S=100, K=array([99, 101]), sigma=0.2,
         ...     ttm=1, r=0.01, q=0, weight=[2, 1])
-        >>> p.payoff()
+        >>> p.payoff().item()
         2
 
         Verify by taking each option separately
@@ -152,7 +152,7 @@ class option_portfolio(GBSx):
         --------
         >>> p = option_portfolio(S=100, K=array([99, 101]), sigma=0.2,
         ...     ttm=1, r=0.01, q=0, weight=[2, 1])
-        >>> p.profit(ST=110).round(6)
+        >>> p.profit(ST=110).round(6).item()
         5.195138
 
         Verify by taking each option separately
@@ -184,7 +184,7 @@ class option_portfolio(GBSx):
         --------
         >>> p = option_portfolio(S=100, K=array([99, 101]), sigma=0.2,
         ...     ttm=1, r=0.01, q=0, weight=[2, 1])
-        >>> p.Delta().round(6)
+        >>> p.Delta().round(6).item()
         1.698643
 
         Verify by taking each option separately
@@ -203,7 +203,7 @@ class option_portfolio(GBSx):
         --------
         >>> p = option_portfolio(S=100, K=array([99, 101]), sigma=0.2,
         ...     ttm=1, r=0.01, q=0, weight=[2, 1])
-        >>> p.DeltaFwd().round(6)
+        >>> p.DeltaFwd().round(6).item()
         1.681741
 
         """
@@ -216,7 +216,7 @@ class option_portfolio(GBSx):
         --------
         >>> p = option_portfolio(S=100, K=array([99, 101]), sigma=0.2,
         ...     ttm=1, r=0.01, q=0, weight=[2, 1])
-        >>> p.DeltaDriftless().round(6)
+        >>> p.DeltaDriftless().round(6).item()
         1.698643
 
         """
@@ -229,7 +229,7 @@ class option_portfolio(GBSx):
         --------
         >>> p = option_portfolio(S=100, K=array([99, 101]), sigma=0.2,
         ...     ttm=1, r=0.01, q=0, weight=[2, 1])
-        >>> p.DeltaDual().round(6)
+        >>> p.DeltaDual().round(6).item()
         -1.44594
 
         """
@@ -242,7 +242,7 @@ class option_portfolio(GBSx):
         --------
         >>> p = option_portfolio(S=100, K=array([99, 101]), sigma=0.2,
         ...     ttm=1, r=0.01, q=0, weight=[2, 1])
-        >>> p.Theta().round(6)
+        >>> p.Theta().round(6).item()
         -13.230481
 
         """
@@ -255,7 +255,7 @@ class option_portfolio(GBSx):
         --------
         >>> p = option_portfolio(S=100, K=array([99, 101]), sigma=0.2,
         ...     ttm=1, r=0.01, q=0, weight=[2, 1])
-        >>> p.Theta_daily().round(6)
+        >>> p.Theta_daily().round(6).item()
         -0.036248
 
         """
@@ -269,7 +269,7 @@ class option_portfolio(GBSx):
         --------
         >>> p = option_portfolio(S=100, K=array([99, 101]), sigma=0.2,
         ...     ttm=1, r=0.01, q=0, weight=[2, 1])
-        >>> p.Vega().round(6)
+        >>> p.Vega().round(6).item()
         117.898867
 
         """
@@ -283,7 +283,7 @@ class option_portfolio(GBSx):
         --------
         >>> p = option_portfolio(S=100, K=array([99, 101]), sigma=0.2,
         ...     ttm=1, r=0.01, q=0, weight=[2, 1])
-        >>> p.Vega_percent().round(6)
+        >>> p.Vega_percent().round(6).item()
         1.178989
 
         """
@@ -297,7 +297,7 @@ class option_portfolio(GBSx):
         --------
         >>> p = option_portfolio(S=100, K=array([99, 101]), sigma=0.2,
         ...     ttm=1, r=0.01, q=0, weight=[2, 1])
-        >>> p.RhoD().round(6)
+        >>> p.RhoD().round(6).item()
         144.059404
 
         """
@@ -310,7 +310,7 @@ class option_portfolio(GBSx):
         --------
         >>> p = option_portfolio(S=100, K=array([99, 101]), sigma=0.2,
         ...     ttm=1, r=0.01, q=0, weight=[2, 1])
-        >>> p.RhoF().round(6)
+        >>> p.RhoF().round(6).item()
         -169.864267
 
         """
@@ -325,7 +325,7 @@ class option_portfolio(GBSx):
         --------
         >>> p = option_portfolio(S=100, K=array([99, 101]), sigma=0.2,
         ...     ttm=1, r=0.01, q=0, weight=[2, 1])
-        >>> p.Gamma().round(6)
+        >>> p.Gamma().round(6).item()
         0.058949
 
         """
@@ -338,7 +338,7 @@ class option_portfolio(GBSx):
         --------
         >>> p = option_portfolio(S=100, K=array([99, 101]), sigma=0.2,
         ...     ttm=1, r=0.01, q=0, weight=[2, 1])
-        >>> p.GammaDual().round(6)
+        >>> p.GammaDual().round(6).item()
         0.059352
 
         """
@@ -352,7 +352,7 @@ class option_portfolio(GBSx):
         --------
         >>> p = option_portfolio(S=100, K=array([99, 101]), sigma=0.2,
         ...     ttm=1, r=0.01, q=0, weight=[2, 1])
-        >>> p.Charm().round(6)
+        >>> p.Charm().round(6).item()
         -0.078649
 
        """
@@ -366,7 +366,7 @@ class option_portfolio(GBSx):
         --------
         >>> p = option_portfolio(S=100, K=array([99, 101]), sigma=0.2,
         ...     ttm=1, r=0.01, q=0, weight=[2, 1])
-        >>> p.Vanna().round(6)
+        >>> p.Vanna().round(6).item()
         0.196994
 
         """
@@ -379,7 +379,7 @@ class option_portfolio(GBSx):
         --------
         >>> p = option_portfolio(S=100, K=array([99, 101]), sigma=0.2,
         ...     ttm=1, r=0.01, q=0, weight=[2, 1])
-        >>> p.Volga().round(6)
+        >>> p.Volga().round(6).item()
         -5.835487
 
        """
@@ -395,7 +395,7 @@ class option_portfolio(GBSx):
         --------
         >>> p = option_portfolio(S=100, K=array([99, 101]), sigma=0.2,
         ...     ttm=1, r=0.01, q=0, weight=[2, 1])
-        >>> p.Color().round(6)
+        >>> p.Color().round(6).item()
         -0.030064
 
         """

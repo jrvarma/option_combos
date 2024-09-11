@@ -198,7 +198,7 @@ def makedf(d, index_from_Series=False):
     return df
 
 
-def merton(DebtBV, maturity, r, DivYld=0, frequency=np.Inf, Assets=np.nan,
+def merton(DebtBV, maturity, r, DivYld=0, frequency=np.inf, Assets=np.nan,
            sigmaA=np.nan, EquityMV=np.nan, DebtMV=np.nan, DebtYTM=np.nan,
            CreditSpread=np.nan, coupon=np.nan, index_from_Series=False):
     r"""Merton (structural) credit model.
@@ -220,7 +220,7 @@ def merton(DebtBV, maturity, r, DivYld=0, frequency=np.Inf, Assets=np.nan,
     DivYld : float or sequence
         The dividend yield
         This is annualized, and in percent
-    frequency: integer or np.Inf or sequence
+    frequency: integer or np.inf or sequence
         The frequency of compounding of interest rates and spreads
     Assets : None or float or sequence
         The current market price of the assets of the firm

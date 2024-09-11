@@ -176,10 +176,10 @@ class GBS:
 
         Examples
         --------
-        >>> GBS().value().round(10)
+        >>> GBS().value().round(10).item()
         2.423056836
 
-        >>> GBS(S=101, ttm=1).NPV().round(10)
+        >>> GBS(S=101, ttm=1).NPV().round(10).item()
         9.823259516
 
         >>> sigmas = numpy.array([15, 20, 25]) / 100
@@ -258,7 +258,7 @@ class GBS:
 
         Examples
         --------
-        >>> GBS(S=101, ttm=1).Delta().round(8)
+        >>> GBS(S=101, ttm=1).Delta().round(8).item()
         0.60558311
 
         """
@@ -274,7 +274,7 @@ class GBS:
 
         Examples
         --------
-        >>> GBS(S=101, ttm=1).DeltaFwd().round(8)
+        >>> GBS(S=101, ttm=1).DeltaFwd().round(8).item()
         0.58768543
 
         """
@@ -290,7 +290,7 @@ class GBS:
 
         Examples
         --------
-        >>> GBS(S=101, ttm=1).DeltaDriftless().round(8)
+        >>> GBS(S=101, ttm=1).DeltaDriftless().round(8).item()
         0.6178167
 
         """
@@ -306,7 +306,7 @@ class GBS:
 
         Examples
         --------
-        >>> GBS(S=101, ttm=1).DeltaDual().round(8)
+        >>> GBS(S=101, ttm=1).DeltaDual().round(8).item()
         -0.51340635
 
         """
@@ -323,7 +323,7 @@ class GBS:
 
         Examples
         --------
-        >>> GBS(S=101, ttm=1).Theta().round(8)
+        >>> GBS(S=101, ttm=1).Theta().round(8).item()
         -5.11977695
 
         """
@@ -345,7 +345,7 @@ class GBS:
 
         Examples
         --------
-        >>> GBS(S=101, ttm=1).Theta_daily().round(8)
+        >>> GBS(S=101, ttm=1).Theta_daily().round(8).item()
         -0.01402679
 
         """
@@ -361,7 +361,7 @@ class GBS:
 
         Examples
         --------
-        >>> GBS().Vega().round(8)
+        >>> GBS().Vega().round(8).item()
         11.4673916
 
         """
@@ -377,7 +377,7 @@ class GBS:
 
         Examples
         --------
-        >>> GBS().Vega_percent().round(8)
+        >>> GBS().Vega_percent().round(8).item()
         0.11467392
 
         """
@@ -393,7 +393,7 @@ class GBS:
 
         Examples
         --------
-        >>> GBS().RhoD().round(8)
+        >>> GBS().RhoD().round(8).item()
         4.19712579
 
         """
@@ -410,7 +410,7 @@ class GBS:
 
         Examples
         --------
-        >>> GBS().RhoF().round(8)
+        >>> GBS().RhoF().round(8).item()
         -4.39904719
 
         """
@@ -429,7 +429,7 @@ class GBS:
 
         Examples
         --------
-        >>> GBS(S=101, ttm=1).Gamma().round(8)
+        >>> GBS(S=101, ttm=1).Gamma().round(8).item()
         0.0185081
 
         """
@@ -453,7 +453,7 @@ class GBS:
 
         Examples
         --------
-        >>> GBS(S=101, ttm=1).GammaDual().round(8)
+        >>> GBS(S=101, ttm=1).GammaDual().round(8).item()
         0.01888012
 
         """
@@ -471,7 +471,7 @@ class GBS:
 
         Examples
         --------
-        >>> GBS(S=101, ttm=1).Charm().round(8)
+        >>> GBS(S=101, ttm=1).Charm().round(8).item()
         -0.02532113
 
         """
@@ -494,7 +494,7 @@ class GBS:
 
         Examples
         --------
-        >>> GBS(S=101, ttm=1).Vanna().round(8)
+        >>> GBS(S=101, ttm=1).Vanna().round(8).item()
         -0.1864676
 
         """
@@ -511,7 +511,7 @@ class GBS:
 
         Examples
         --------
-        >>> GBS(S=101, ttm=1).Volga().round(8)
+        >>> GBS(S=101, ttm=1).Volga().round(8).item()
         5.6452911
 
         """
@@ -532,7 +532,7 @@ class GBS:
 
         Examples
         --------
-        >>> GBS().Color().round(8)
+        >>> GBS().Color().round(8).item()
         -0.41635232
 
         """
