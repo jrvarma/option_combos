@@ -1,5 +1,4 @@
-docutils>=0.18.1,<0.21
-m2r2
+myst-parser
 numpy
 scipy
 pandas

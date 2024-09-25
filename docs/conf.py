@@ -18,7 +18,7 @@ sys.path.insert(0, os.path.abspath('..'))
 # -- Project information -----------------------------------------------------
 
 project = 'option_combos'
-copyright = '2016, 2020, 2023 Prof. Jayanth R. Varma and Prof. Vineet Virmani'
+copyright = '2016-2024 Prof. Jayanth R. Varma and Prof. Vineet Virmani'
 author = 'Prof. Jayanth R. Varma and Prof. Vineet Virmani'
 
 
@@ -30,10 +30,19 @@ author = 'Prof. Jayanth R. Varma and Prof. Vineet Virmani'
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.napoleon',
-    'm2r2',  # https://github.com/CrossNox/m2r2
+    # 'sphinx_mdinclude',
+    'myst_parser',
 ]
 
-source_suffix = ['.rst', '.md']  # https://github.com/CrossNox/m2r2
+myst_heading_anchors = 2
+
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.txt': 'markdown',
+    '.md': 'markdown',
+}
+
+# source_suffix = ['.rst', '.md']  # https://github.com/CrossNox/m2r2
 
 master_doc = 'index'
 

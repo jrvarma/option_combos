@@ -1,8 +1,11 @@
-.. contents:: Table of Contents
-   :depth: 2
+```{contents} Table of Contents
+:depth: 2
+```
 
-.. mdinclude:: ../README.md
+```{include} ../README.md
+```
 
+```{eval-rst}
 
 Basic Black Scholes
 ===================
@@ -58,3 +61,5 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+```
